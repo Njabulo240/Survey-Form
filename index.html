@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Build a Survey Form</title>
+	  <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+ <main>
+    <h1 id="title">freeCodeCamp Survey Form</h1>  
+<p id="description">Thank you for taking the time to help us improve the platform</p>
+
+<form id="survey-form">
+  <fieldset>
+    <label id="name-label">Name <input id="name" type="text" placeholder="Enter your name" value="name" required/></label>
+    <label id="email-label">Email <input id="email" type="email" placeholder="Enter your email"  value="email"  required /></label>
+    <label id="number-label">Age (optional) <input id="number" type="number" min="6" value="8" max="15" placeholder="Enter your age" value="age" required/></label>
+
+    <label>Which option best describes your current role?
+      <select name="role">
+        <option value="0">select current role</option>
+        <option value="1">student</option>
+        <option value="2">full time job</option>
+        <option value="3">full time learner</option>
+        <option value="4">Other</option>
+      </select>
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <label>Would you recommend freeCodeCamp to a friend?</label>
+    <label><input type="radio" name="definitely-maybe-Not" class="inline" /> Definitely</label>
+    <label><input type="radio" name="definitely-maybe-Not" class="inline" /> Maybe</label>
+    <label><input type="radio" name="definitely-maybe-Not" class="inline" /> Not sure</label>
+  </fieldset>
+
+
+
+  <fieldset>
+    <label>What is your favorite feature of freeCodeCamp?
+      <select name="role">
+        <option value="0">select an option</option>
+        <option value="1">Challeges</option>
+        <option value="2">Projects</option>
+        <option value="3">Communuty</option>
+        <option value="4">Open Source</option>
+      </select>
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <label>What would you like to see improved? (Check all that apply)</label>
+    <label>
+      <input type="checkbox" name="skill" class="inline" required /> Front-end Projects
+    </label>
+    <label>
+      <input type="checkbox" name="skill" class="inline" required /> Back-end Projects
+    </label>
+    <label>
+      <input type="checkbox" name="skill" class="inline" required /> Data Visualization
+    </label>
+    <label>
+      <input type="checkbox" name="skill" class="inline" required /> Challenges
+    </label>
+    <label>
+      <input type="checkbox" name="skill" class="inline" required /> Open Source Community
+    </label>
+    <label>
+      <input type="checkbox" name="skill" class="inline" required /> Gitter help rooms
+
+    </label>
+
+  </fieldset>
+
+  <fieldset>
+  <label>Any comments or suggestions?
+    <textarea name="bio" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+  </label>
+</fieldset>
+<input type="submit" value="Submit" />
+  </form>
+  
+</main>
+  </body>
